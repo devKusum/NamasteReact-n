@@ -5,6 +5,7 @@
     display: flex;
    justify-content: space-around;
    margin-bottom: 40px;
+   border: 1px solid black;
 }
 .nav-Items > ul{
     display: flex;
@@ -17,7 +18,8 @@
 }
 
 .body-container{
- padding: 20px;
+background-color: rgb(169, 245, 245);
+padding: 30px;
 
 
 }
@@ -46,23 +48,34 @@
 }
 .rest-container{
     display: flex;
+    flex-wrap: wrap;
    justify-content: center;
-   align-items: center;
+   /* align-items: center; */
 
+}
+.res-logo{
+    width: 190px;
 }
 
 .card{
+ 
     border: 1px solid black;
-    width: 100px;
+    width: 200px;
     border-radius:5px ;
     padding: 5px;
     text-align: center;
     margin-right:10px;
+    box-shadow: 0px 0px 2px black;
 }
-
+.footer{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: beige;
+    margin-top: 30px;
+}
 .footer > ul{
     display: flex;
-    flex-direction: column;
+     justify-content: end;
    
     list-style-type: none;
 }
