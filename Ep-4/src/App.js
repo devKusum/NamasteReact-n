@@ -1,18 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { resList } from "./mockData.js";
+// import logo from"./img/cup.jpg";
 
-//=======================Food ordering app ======================
-//layout design
-//Header
-//-logo
-//-navItems
-//Body
-//-serch
-//-rest-container
-//Footer
-//-copyright
-//-  Contact links
 
 const Header = () => {
   return (
