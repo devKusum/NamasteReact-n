@@ -1,17 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import Body from './components/Body'
-import Header from './components/Header'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Header from './component/Header';
+import Body from './component/Body';
 
-const HotelRegistration = () => {
-  return (
-    <div className="app">
-      <Header />
-      <Body />
-    
-    </div>
-  );
-};
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HotelRegistration />);
+
+const App = () => {
+    return (
+       <div className='app'>
+             <Header/>
+             <Body/>
+       </div>
+    )
+}
+
+
+
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>)
