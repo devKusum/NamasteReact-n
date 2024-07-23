@@ -1,0 +1,17 @@
+{
+  "name": "hotelregistration",
+  "version": "1.0.0",
+  "description": "Hotel Registration",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "HotelRegistration"
+  ],
+  "author": "kusum",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
