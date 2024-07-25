@@ -38,13 +38,14 @@ padding: 30px;
     box-shadow: 0px 0px 4px black;
     width: 50%;
 }
-.search-btn{
+.top-rated-search-btn{
     background-color: rgb(193, 193, 245);
-    padding: 5px 20px;
+    padding: 11px 20px;
     border-radius: 5px;
     border: none;
     outline: none;
     box-shadow: 0px 0px 4px black;
+    cursor: pointer;
 }
 .rest-container{
     display: flex;
