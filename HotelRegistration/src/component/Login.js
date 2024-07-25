@@ -5,7 +5,7 @@ const Login = () => {
         <form>
             <h1 class="form-heading">Login</h1>
            <input type="text" placeholder="Email"  width="100"/>
-           <input type="passowrd" placeholder="passowrd"  width="100"/>
+           <input type="password" placeholder="password"  width="100"/>
 
              <button width="100" >Login</button>
               

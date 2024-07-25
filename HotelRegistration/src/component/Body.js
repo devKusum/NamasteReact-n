@@ -1,6 +1,6 @@
-import Login from '/Login';
-import Signin from '/Signin';
-import Contact from '/Contact';
+import Login from './Login';
+import Signin from './Signin';
+import Contact from './Contact';
 const Body = () => {
     return (
 //         <main className="main">
