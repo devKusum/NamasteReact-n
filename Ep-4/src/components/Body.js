@@ -14,7 +14,7 @@ const Body = () => {
     
    const fetchData = async ()  => {
     const data = await fetch(
-      "https://api.freeapi.app/api/v1/public/meals?page=1&limit=100"
+      "https://api.freeapi.app/api/v1/public/meals?page=1&limit=1000"
     );
 
     const json = await data.json();
