@@ -9,16 +9,19 @@ const Body = () => {
 
   useEffect(() => {
           fetchData();
+        
   } ,[]);
-
+    
    const fetchData = async ()  => {
     const data = await fetch(
-      "https://api.freeapi.app/api/v1/public/meals?page=1&limit=10"
+      "https://api.freeapi.app/api/v1/public/meals?page=1&limit=100"
     );
 
     const json = await data.json();
     console.log(json)
-    setListOfRestraunt(json.data.data[2]);
+    setListOfRestraunt(json.data.data);
+    console.log(json.data.data)
+  
 
    };
     return (
