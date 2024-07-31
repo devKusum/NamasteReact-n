@@ -59,11 +59,11 @@ export const resList = [
     strImageSource: null,
     strCreativeCommonsConfirmed: null,
     dateModified: null,
-    strRating:"8.8",
+    strRating: "8.8",
     id: 8,
   },
 
- 
+
   {
     idMeal: "52954",
     strMeal: "Hot and Sour Soup",
@@ -119,7 +119,7 @@ export const resList = [
     strImageSource: null,
     strCreativeCommonsConfirmed: null,
     dateModified: null,
-    strRating:"3.4",
+    strRating: "3.4",
     id: 10,
   },
 ];
