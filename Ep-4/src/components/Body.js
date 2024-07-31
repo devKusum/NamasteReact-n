@@ -31,7 +31,7 @@ const Body = () => {
     //optional chaining
     setListOfRestraunt(json?.data?.data);
     setFilteredRestraunt(json?.data?.data);
-    console.log(json?.data?.data);
+    // console.log(json?.data?.data);
   };
 
   //conditional rendering
@@ -61,7 +61,7 @@ const Body = () => {
           //searchText
           console.log(searchText);
           const filteredRestaurant = ListOfRestaurants.filter(
-            (res) => res.strMeal.toLowerCase().includes(searchText.toLowerCase())
+            (res) => res.strCategory.toLowerCase().includes(searchText.toLowerCase())
           );
           setFilteredRestraunt(filteredRestaurant);
           setSearchText("");
@@ -69,9 +69,9 @@ const Body = () => {
         }}
         >search</button>
         <button className="button" onClick={() => {
-          const filteredList = ListOfRestaurants.filter((res) => res.strRating > 4
+          const filteredList = ListOfRestaurants.filter((res) => res.strCategory === 'Vegetarian'
           );
-          setListOfRestraunt(filteredList);
+          setFilteredRestraunt(filteredList);
         }}
         >
           Top Restaurants
