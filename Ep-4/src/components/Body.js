@@ -32,7 +32,6 @@ const Body = () => {
     setListOfRestraunt(json?.data?.data);
     setFilteredRestraunt(json?.data?.data);
     console.log(json?.data?.data);
-    setSearchText("");
   };
 
   //conditional rendering
@@ -65,6 +64,8 @@ const Body = () => {
             (res) => res.strMeal.toLowerCase().includes(searchText.toLowerCase())
           );
           setFilteredRestraunt(filteredRestaurant);
+          setSearchText("");
+
         }}
         >search</button>
         <button className="button" onClick={() => {

@@ -18,14 +18,14 @@ const Header = () => {
           <li>About</li>
           <li>Contact</li>
           <li>Cart</li>
-          <button className="button" onClick={() => {
-            loginbtnReact === "login" ? setloginbtnReact("logout") : setloginbtnReact("login");
-          }}
-          >
-            {loginbtnReact}
-          </button>
         </ul>
       </nav>
+      <button className="button" onClick={() => {
+        loginbtnReact === "login" ? setloginbtnReact("logout") : setloginbtnReact("login");
+      }}
+      >
+        {loginbtnReact}
+      </button>
     </header>
   );
 };
