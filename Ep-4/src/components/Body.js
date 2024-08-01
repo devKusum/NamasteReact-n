@@ -14,9 +14,6 @@ const Body = () => {
   //whenever state variables updated , react triggers a reconciliation cycle(re-renders the component)
 
 
-  // console.log("rendered2")
-
-
   useEffect(() => {
     fetchData();
 
