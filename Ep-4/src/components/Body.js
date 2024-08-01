@@ -58,7 +58,7 @@ const Body = () => {
           //searchText
           console.log(searchText);
           const filteredRestaurant = ListOfRestaurants.filter(
-            (res) => res.strCategory.toLowerCase().includes(searchText.toLowerCase())
+            (res) => res.strCategory.toLowerCase().includes(searchText.toLowerCase()) || res.strMeal.toLowerCase().includes(searchText.toLowerCase())
           );
           setFilteredRestraunt(filteredRestaurant);
           setSearchText("");
@@ -71,7 +71,7 @@ const Body = () => {
           setFilteredRestraunt(filteredList);
         }}
         >
-         Veg Restaurants 
+         Vegetarian food
 
         </button>
       </div>
