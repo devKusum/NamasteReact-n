@@ -62,7 +62,7 @@ a {
     background: #000;
 }
 
-.button {
+.button , button {
     background-color: orangered;
     padding: 10px 30px;
     border-radius: 5px;

@@ -53,7 +53,7 @@ const Body = () => {
           }}
 
         />
-        <button className="button" onClick={() => {
+        <button className="button2" onClick={() => {
           //filter the restraint cards and update the UI.
           //searchText
           console.log(searchText);
@@ -65,13 +65,13 @@ const Body = () => {
 
         }}
         >search</button>
-        <button className="button" onClick={() => {
+        <button className="button2" onClick={() => {
           const filteredList = ListOfRestaurants.filter((res) => res.strCategory === 'Vegetarian'
           );
           setFilteredRestraunt(filteredList);
         }}
         >
-          Top Restaurants
+         Veg Restaurants 
 
         </button>
       </div>
