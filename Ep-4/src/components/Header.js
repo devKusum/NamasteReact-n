@@ -1,10 +1,23 @@
 
-import { useState } from "react";
-
-
+import { useState, useEffect } from "react";
 const Header = () => {
 
   const [loginbtnReact, setloginbtnReact] = useState("login") //toggling btn
+
+
+
+
+// if there is no [dependency array] , useEffect will call on every render.
+// if there is  [empty dependency array] ,  useEffect will call after initial render (just once).
+// if there is  [something inside dependency array] ,  useEffect will call when the dependency changes like = [loginbtnReact] .
+
+useEffect(()=>{
+  console.log('useEffect called')
+},[])
+
+
+
+
 
 
   return (

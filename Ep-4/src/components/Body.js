@@ -8,7 +8,7 @@ const Body = () => {
 
   const [ListOfRestaurants, setListOfRestraunt] = useState([]);
   const [filteredRestaurant, setFilteredRestraunt] = useState([]);
-  const [searchText, setSearchText] = useState("");
+  const [searchText, setSearchText] = useState("");//never create useState outside of your body component.
 
 
   //whenever state variables updated , react triggers a reconciliation cycle(re-renders the component)
@@ -16,12 +16,13 @@ const Body = () => {
 
   useEffect(() => {
     fetchData();
+  
 
-  }, []);
+  },[]);
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://api.freeapi.app/api/v1/public/meals?page=1&limit=30"
+      "https://api.freeapi.app/api/v1/public/meals?page=1&limit=130"
     );
 
     const json = await data.json();
