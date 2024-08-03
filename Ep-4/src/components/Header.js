@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 const Header = () => {
 
   const [loginbtnReact, setloginbtnReact] = useState("login") //toggling btn
@@ -27,9 +28,15 @@ useEffect(()=>{
       </div>
       <nav className="nav-Items">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+          <Link to = "/">Home</Link>
+          </li>
+          <li>
+            <Link to = "/about">About</Link>
+            </li>
+          <li>
+            <Link to = "/contact">Contact</Link>
+            </li>
           <li>Cart</li>
         </ul>
       </nav>
