@@ -29,7 +29,7 @@ const Body = () => {
     //optional chaining
     setListOfRestraunt(json?.data?.data);
     setFilteredRestraunt(json?.data?.data);
-    // console.log(json?.data?.data);
+    console.log(json?.data?.data);
   };
 
   //conditional rendering

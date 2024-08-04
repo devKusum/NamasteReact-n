@@ -5,7 +5,7 @@ const Restcard = (resList) => {
   return (
     <div className="card">
       <div className="card-header">
-        <img
+      <img
           className="meal-image"
           src={strMealThumb}
           alt="cup"
