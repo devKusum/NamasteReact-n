@@ -18,7 +18,16 @@
 
 a {
     text-decoration: none;
+<<<<<<< HEAD
     color: yellow;
+=======
+    color: white;
+}
+
+.header a:hover {
+    color: orangered;
+    border-bottom: 1px solid orangered;
+>>>>>>> 19866b5d64b4717ced58836562a46e60470e0799
 }
 
 .nav-Items>ul {
@@ -63,7 +72,8 @@ a {
     background: #000;
 }
 
-.button , button {
+.button,
+button {
     background-color: orangered;
     padding: 10px 30px;
     border-radius: 5px;
