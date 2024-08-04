@@ -18,16 +18,15 @@
 
 a {
     text-decoration: none;
-<<<<<<< HEAD
+
     color: yellow;
-=======
-    color: white;
+
+ 
 }
 
 .header a:hover {
     color: orangered;
-    border-bottom: 1px solid orangered;
->>>>>>> 19866b5d64b4717ced58836562a46e60470e0799
+    border-bottom: 1px solid orangerd;
 }
 
 .nav-Items>ul {
