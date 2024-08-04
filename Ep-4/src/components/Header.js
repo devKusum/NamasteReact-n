@@ -15,12 +15,7 @@ const Header = () => {
   useEffect(() => {
     console.log('useEffect called')
   }, [])
-
-
-
-
-
-
+  
   return (
     <header className="header">
       <div className="logo-conatainer">

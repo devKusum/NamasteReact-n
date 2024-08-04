@@ -5,11 +5,14 @@ const Restcard = (resList) => {
   return (
     <div className="card">
       <div className="card-header">
-      <img
+    
+
+     <img
           className="meal-image"
           src={strMealThumb}
           alt="cup"
         />
+
       </div>
       <div className="card-body">
         <h4> Meal : {strMeal.split(" ")[1]}</h4>

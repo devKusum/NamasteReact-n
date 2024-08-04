@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* ========================================Header-section============================================= */
 .header {
     width: 100%;
     height: 80px;
@@ -29,6 +29,7 @@ a {
     border-bottom: 1px solid orangerd;
 }
 
+/* ===================================================navbar========================================== */
 .nav-Items>ul {
     display: flex;
     list-style-type: none;
@@ -39,6 +40,8 @@ a {
     margin: 10px;
 }
 
+
+/* ===================================================body-section=========================== */
 .body-container {
     background-color: rgb(169, 245, 245);
     padding: 30px;
@@ -61,6 +64,8 @@ a {
     width: 50%;
 }
 
+
+/* =============================================RestCard-section==================================================== */
 .card-body {
     margin: 13px 0;
 }
@@ -114,7 +119,7 @@ button {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
-
+/* ===============================================Footer-section======================================================= */
 .footer {
     height: 100px;
     background-color: #2e2e2e;
@@ -142,6 +147,7 @@ button {
     font-weight: 200;
 }
 
+/* ===========================================ShimmerUI================================================ */
 .shimmer-container {
     border: 1px solid gray;
     padding: 50px;
@@ -160,4 +166,53 @@ button {
     padding: 5px;
     text-align: center;
     margin: 10px;
+}
+
+ /* =========================Menu-card-section=============================================  */
+.meal-card {
+    width: 90%;
+    height: 100%;
+    padding: 15px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meal-details {
+    width: 60%;
+    padding: 10px;
+    text-align: justify;
+    font-family: "Arial";
+}
+
+.meal-details h2 {
+    padding: 5px;
+    background: crimson;
+    font-size: 32px;
+    color: white;
+}
+
+.meal-details p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.meal-details p:last-child {
+    word-spacing: 2;
+}
+
+.meal-details p span {
+    font-weight: bold;
+}
+
+.meal-thumb {
+    width: 30%;
+}
+
+.meal-thumb img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
 }
