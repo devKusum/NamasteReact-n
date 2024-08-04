@@ -16,13 +16,13 @@ const Body = () => {
 
   useEffect(() => {
     fetchData();
-  
 
-  },[]);
+
+  }, []);
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://api.freeapi.app/api/v1/public/meals?page=1&limit=130"
+      "https://api.freeapi.app/api/v1/public/meals?page=1&limit=10"
     );
 
     const json = await data.json();
@@ -72,7 +72,7 @@ const Body = () => {
           setFilteredRestraunt(filteredList);
         }}
         >
-         Vegetarian food
+          Vegetarian food
 
         </button>
       </div>
