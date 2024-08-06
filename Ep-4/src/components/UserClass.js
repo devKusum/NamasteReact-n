@@ -5,23 +5,38 @@ class UserClass extends React.Component{     //React.Componet given by react
 
    constructor(props){
     super(props);
-
+    console.log(  this.props.name+ "child constructor");
      this.state = {
-        Name :"useState in classs component",
-        Name2 :"useState in classs component",
+       count:0,
+      
      }
-
    }
+
+   componentDidMount(){
+    console.log( this.props.name+ "Child compontnent Did Mount")
+  }
+
+
     render() {
     
-
+     console.log( this.props.name+ "child render")
         //destructuring technique---------
         const {name, location} = this.props; 
-        const {Name, Name2} = this.state; 
+        const {count} = this.state; 
         return(
+        
             <div className="userCard">
-             <h5>name:{Name}</h5>
-             <h5>name:{Name2}</h5>
+             <h5>count:{count}</h5>
+              <button onClick={
+              () => {
+                this.setState({
+                    count:this.state.count + 1,
+                });
+              }
+              }
+            >
+            Count increase
+                </button>
                <h3>Name:{name}</h3>
                <span>Locatio:{location}</span>
                <h3>Post:Web Developer</h3>
@@ -29,6 +44,7 @@ class UserClass extends React.Component{     //React.Componet given by react
               
           
             </div>
+         
         )
     }
     

@@ -13,7 +13,7 @@ const Header = () => {
   // if there is  [something inside dependency array] ,  useEffect will call when the dependency changes like = [loginbtnReact] .
 
   useEffect(() => {
-    console.log('useEffect called')
+   
   }, [])
   
   return (

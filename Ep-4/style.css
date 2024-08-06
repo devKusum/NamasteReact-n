@@ -221,11 +221,11 @@ button {
 
 .about{
     width: 100%;
-    height: 400px;
+    height: 600px;
     padding: 10px;
    
 }
-.aboutTitle,.aboutTeam{
+.aboutTitle{
  
     text-align: center;
     color: crimson;
@@ -233,10 +233,15 @@ button {
 }
 .userCard {
   width: 220px;
- 
     padding: 10px;
     margin: 15px auto;
     border: 1px solid  black;
-    border-radius: 5px;
+    border-radius: 5px;  
+}
+.userCardContainer{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
    
+ 
 }
