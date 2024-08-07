@@ -21,15 +21,17 @@ class UserClass extends React.Component{     //React.Componet given by react
     // console.log( this.props.name+ "Child compontnent Did Mount")
 
     // API CALL
-    const data = await fetch ("https://api.freeapi.app/api/v1/public/meals?page=1&limit=1");
+    const data = await fetch (`https://api.freeapi.app/api/v1/public/meals/${id}`);
     const json = await data.json();
 
 
     this.setState({
-      data: json,
+      data: json.data[0],
     });
-    console.log(json);
+    // console.log(json);
+ 
   };
+
 
 
     render() {
@@ -38,7 +40,7 @@ class UserClass extends React.Component{     //React.Componet given by react
         //destructuring technique---------
    
       const { strMeal, strArea, strCategory } = this.state.data ;
-
+      console.log(this.state.data);
 
         return(
         
