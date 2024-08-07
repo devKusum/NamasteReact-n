@@ -5,42 +5,51 @@ class UserClass extends React.Component{     //React.Componet given by react
 
    constructor(props){
     super(props);
-    console.log(  this.props.name+ "child constructor");
+    // console.log(  this.props.name+ "child constructor");
      this.state = {
-       count:0,
-      
+        data:{
+          strMeal:"dslfs",
+          strArea:"lsdfs",
+          strCategory:"dfldsk",
+          
+
+        },
      }
    }
 
-   componentDidMount(){
-    console.log( this.props.name+ "Child compontnent Did Mount")
-  }
+   async componentDidMount() {
+    // console.log( this.props.name+ "Child compontnent Did Mount")
+
+    // API CALL
+    const data = await fetch ("https://api.freeapi.app/api/v1/public/meals?page=1&limit=1");
+    const json = await data.json();
+
+
+    this.setState({
+      data: json,
+    });
+    console.log(json);
+  };
 
 
     render() {
     
-     console.log( this.props.name+ "child render")
+    //  console.log( this.props.name+ "child render")
         //destructuring technique---------
-        const {name, location} = this.props; 
-        const {count} = this.state; 
+   
+      const { strMeal, strArea, strCategory } = this.state.data ;
+
+
         return(
         
             <div className="userCard">
-             <h5>count:{count}</h5>
-              <button onClick={
-              () => {
-                this.setState({
-                    count:this.state.count + 1,
-                });
-              }
-              }
-            >
-            Count increase
-                </button>
-               <h3>Name:{name}</h3>
-               <span>Locatio:{location}</span>
-               <h3>Post:Web Developer</h3>
-               <span>Mo : 9340114179</span>
+            
+          
+               <h3>Name:{strMeal}</h3>
+               <h3>Location:{strArea}</h3>
+               <h3>Category:{strCategory}</h3>
+              
+               
               
           
             </div>
