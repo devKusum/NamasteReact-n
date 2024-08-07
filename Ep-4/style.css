@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* ========================================Header-section============================================= */
 .header {
     width: 100%;
@@ -21,7 +22,7 @@ a {
 
     color: yellow;
 
- 
+
 }
 
 .header a:hover {
@@ -168,7 +169,7 @@ button {
     margin: 10px;
 }
 
- /* =========================Menu-card-section=============================================  */
+/* =========================Menu-card-section=============================================  */
 .meal-card {
     width: 90%;
     height: 100%;
@@ -219,29 +220,32 @@ button {
 
 /* =======================================User-Card=========================================== */
 
-.about{
+.about {
     width: 100%;
 
 
-   
+
 }
-.aboutTitle{
+
+.aboutTitle {
     margin-top: 50px;
     text-align: center;
     color: crimson;
- 
+
 }
+
 .userCard {
-     width: 300px;
+    width: 300px;
     padding: 10px;
     margin: 15px auto;
-    border: 1px solid  black;
-    border-radius: 5px;  
+    border: 1px solid black;
+    border-radius: 5px;
 }
-.userCardContainer{
+
+.userCardContainer {
     height: 350px;
     padding: 10px;
-  
-   
- 
+
+
+
 }

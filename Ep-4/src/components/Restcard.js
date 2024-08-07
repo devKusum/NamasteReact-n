@@ -1,17 +1,19 @@
+import { Link } from "react-router-dom";
+
 const Restcard = (resList) => {
   // console.log(resList);
   // /  destructuring of code---- if it is destructuring then no need to write like-- resList.resName etc
-  const { strMeal, strMealThumb, strArea, strYoutube, strCategory } = resList.restList;
+  const { strMeal, strMealThumb, strArea, strYoutube, strCategory, id } = resList.restList;
   return (
     <div className="card">
       <div className="card-header">
-    
-
-     <img
-          className="meal-image"
-          src={strMealThumb}
-          alt="cup"
-        />
+        <Link to={"/menu/" + id} >
+          <img
+            className="meal-image"
+            src={strMealThumb}
+            alt="cup"
+          />
+        </Link>
 
       </div>
       <div className="card-body">
