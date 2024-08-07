@@ -21,12 +21,12 @@ class UserClass extends React.Component{     //React.Componet given by react
     // console.log( this.props.name+ "Child compontnent Did Mount")
 
     // API CALL
-    const data = await fetch (`https://api.freeapi.app/api/v1/public/meals/${id}`);
+    const data = await fetch ( "https://api.freeapi.app/api/v1/public/meals?page=1&limit=10");
     const json = await data.json();
 
 
     this.setState({
-      data: json.data[0],
+      data: json.data,
     });
     // console.log(json);
  
