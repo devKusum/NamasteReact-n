@@ -1,23 +1,32 @@
+//`https://api.freeapi.app/api/v1/public/meals/${id}`--------------Menu_API
 
 
-import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom';
+import useRestaurantMenu from "../utils/useRestaurantMenu";
 
 const Menu = () => {
 
     const { id } = useParams();
-    const [mealData, setMealData] = useState([]);
+  
+    const mealData = useRestaurantMenu(id);
     const { strMealThumb, strArea, strCategory, strMeal, strInstructions, strTags, strYoutube } = mealData;
 
-    useEffect(() => {
-        fetchApiData();
-    }, [id]);
 
-    const fetchApiData = async () => {
-        const res = await fetch(`https://api.freeapi.app/api/v1/public/meals/${id}`);
-        const resData = await res.json();
-        setMealData(resData?.data);
-    }
+
+
+
+    //const [mealData, setMealData] = useState([]);
+    // const { strMealThumb, strArea, strCategory, strMeal, strInstructions, strTags, strYoutube } = mealData;
+
+    // useEffect(() => {
+    //     fetchApiData();
+    // }, [id]);
+
+    // const fetchApiData = async () => {
+    //     const res = await fetch(`https://api.freeapi.app/api/v1/public/meals/${id}`);
+    //     const resData = await res.json();
+    //     setMealData(resData?.data);
+    // }
 
 
 

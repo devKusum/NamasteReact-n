@@ -1,5 +1,5 @@
 // 20240716113736
-// https://api.freeapi.app/api/v1/public/meals?page=1&limit=100
+// https://api.freeapi.app/api/v1/public/meals?page=1&limit=10
 
 export const resList = [
 
