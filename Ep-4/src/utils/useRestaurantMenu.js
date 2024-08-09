@@ -8,12 +8,12 @@ const [mealData, setMealData] = useState()
 //fetchData
 useEffect(()=>{
     fetchData();
-},[])
+},[id])
 
 const fetchData = async () =>{
     const data = await fetch(`https://api.freeapi.app/api/v1/public/meals/${id}`);
     const json = await data.json();
-    setMealData(json.data.data[7]);
+    setMealData(json.data.data);
 }
     return mealData;
 

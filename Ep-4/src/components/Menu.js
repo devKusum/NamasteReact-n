@@ -9,12 +9,16 @@ const Menu = () => {
     const { id } = useParams();
   
     const mealData = useRestaurantMenu(id);
-    // const { strMealThumb, strArea, strCategory, strMeal, strInstructions, strTags, strYoutube } = mealData;
+    const { strMealThumb, strArea, strCategory, strMeal, strInstructions, strTags, strYoutube } = mealData;
 
 
     
 
 
+
+
+
+    
 
 
 
@@ -30,7 +34,6 @@ const Menu = () => {
     //     const resData = await res.json();
     //     setMealData(resData?.data);
     // }
-
 
 
 
