@@ -11,17 +11,6 @@ const Menu = () => {
     const mealData = useRestaurantMenu(id);
     const { strMealThumb, strArea, strCategory, strMeal, strInstructions, strTags, strYoutube } = mealData;
 
-
-    
-
-
-
-
-
-    
-
-
-
     //const [mealData, setMealData] = useState([]);
     // const { strMealThumb, strArea, strCategory, strMeal, strInstructions, strTags, strYoutube } = mealData;
 
