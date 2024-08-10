@@ -5,8 +5,7 @@ const Menu = () => {
   const { id } = useParams();
 
   const mealData = useRestaurantMenu(id);
-  //   console.log(mealData);
-  //   return;
+  console.log(mealData.data);
 
   const {
     strMealThumb,
@@ -16,7 +15,20 @@ const Menu = () => {
     strInstructions,
     strTags,
     strYoutube,
-  } = mealData;
+  } = mealData.data;
+
+  //const [mealData, setMealData] = useState([]);
+  // const { strMealThumb, strArea, strCategory, strMeal, strInstructions, strTags, strYoutube } = mealData;
+
+  // useEffect(() => {
+  //     fetchApiData();
+  // }, [id]);
+
+  // const fetchApiData = async () => {
+  //     const res = await fetch(`https://api.freeapi.app/api/v1/public/meals/${id}`);
+  //     const resData = await res.json();
+  //     setMealData(resData?.data);
+  // }
 
   return (
     <div className="meal-card">
