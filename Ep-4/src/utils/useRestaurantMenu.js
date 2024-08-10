@@ -13,7 +13,7 @@ const useRestaurantMenu = (id) => {
       `https://api.freeapi.app/api/v1/public/meals/${id}`
     );
     const json = await data.json();
-    setMealData(json);
+    setMealData(json.data);
   };
   return mealData;
 };
