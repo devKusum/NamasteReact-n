@@ -6,6 +6,8 @@ const Menu = () => {
     const { id } = useParams();
   
     const mealData = useRestaurantMenu(id);
+    // console.log(mealData);
+ 
     const { strMealThumb, strArea, strCategory, strMeal, strInstructions, strTags, strYoutube } = mealData;
 
 
