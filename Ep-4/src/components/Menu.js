@@ -1,5 +1,3 @@
-//`https://api.freeapi.app/api/v1/public/meals/${id}`--------------Menu_API
-
 import { Link, useParams } from "react-router-dom";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 
