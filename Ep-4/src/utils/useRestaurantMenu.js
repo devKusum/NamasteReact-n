@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const useRestaurantMenu = (id) => {
-  const [mealData, setMealData] = useState({});
+  const [mealData, setMealData] = useState([]);
 
 
   //fetchData
