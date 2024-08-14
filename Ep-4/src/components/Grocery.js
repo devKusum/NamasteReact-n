@@ -3,7 +3,7 @@ const Grocery = () =>{
         <div className="grocery">
          
             <h1>
-            Grocery ...
+           Online Buy Grocery ...
             </h1>
             
             </div>
