@@ -1,13 +1,12 @@
-import React , {lazy, Suspense} from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
-import Body from './components/Body';
-import Header from './components/Header';
-import Footer from './components/Footer';
-
-import About  from "./components/About";
-import Contact  from "./components/Contact";
-import Error  from "./components/Error";
-import Menu  from "./components/Menu";
+import Body from "./components/Body";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Error from "./components/Error";
+import Menu from "./components/Menu";
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 // import Grocery from "./components/Grocery";
@@ -31,32 +30,25 @@ const AppLayout = () => {
   );
 };
 
-const appRouter = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <AppLayout />,
-      children: [
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
 
-
-        {
-          path: "/",
-          element: <Body />,
-        },
-
-        {
-          path: "/about",
-          element: <About />,
-        },
+      {
+        path: "/about",
+        element: <About />,
+      },
 
         {
           path: "/contact",
           element: <Contact />,
         },
-       {
-             path: "/grocery",
-             element:<Suspense fallback = {<h1>Lazy Loading.......</h1>}><Grocery/></Suspense>
-       },
         {
           path:"/menu/:id",
            element:<Menu/>,

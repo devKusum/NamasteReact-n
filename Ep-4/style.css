@@ -9,17 +9,20 @@
 .header {
     width: 100%;
     height: 80px;
-    background-color: #2e2e2e;
     display: flex;
+    background-color: #2e2e2e;
     justify-content: space-around;
-    align-items: center;
     box-shadow: 1px 1px 8px black;
+    align-items: center;
     color: #fff;
 }
 
 a {
     text-decoration: none;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1bc6a3c6366fb44db2062b7a246398ff309905a3
     color: white;
 
 
@@ -123,6 +126,9 @@ button {
 /* ===============================================Footer-section======================================================= */
 .footer {
     height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
     background-color: #2e2e2e;
 }
 
