@@ -20,8 +20,8 @@ const Header = () => {
   // }
 
   return (
-    <header className="header">
-      <div className="logo-conatainer">
+    <header className=" flex">
+      <div className="logo-conatainer ">
         <h1>
           <Link to="/"> KFC </Link>
         </h1>
