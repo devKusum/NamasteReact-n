@@ -20,7 +20,7 @@
 a {
     text-decoration: none;
 
-    color: yellow;
+    color: white;
 
 
 }
@@ -255,4 +255,14 @@ button {
     height: 300px;
     text-align: center;
     margin-top: 50px;
+    color: crimson;
+  
+}
+/* =======================================Grocery============================= */
+.grocery{
+    height: 300px;
+    text-align: center;
+    margin-top: 50px;
+    color: crimson;
+  
 }
